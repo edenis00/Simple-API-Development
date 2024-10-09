@@ -1,0 +1,5 @@
+Install the following packages
+pip install flask
+pip install flask_migrate
+pip install flask_SQLalchemy
+pip install psycorp2-binary

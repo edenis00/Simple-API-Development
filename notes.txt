@@ -1,0 +1,15 @@
+To setup the python virtual environment 
+- python -m venv venv
+
+The activate the virtual environment
+- source venv/bin/activate
+- install necessary packages
+
+After writing my code i use flask migration
+- flask db init
+- flask db migrate -m "create User table"
+- flask db upgrade
+
+if any updates done
+- flask db migrate
+- flask db upgrade
