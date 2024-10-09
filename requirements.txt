@@ -1,5 +1,6 @@
-flask
-flask_migrate
-flask_SQLalchemy
+Flask
+Flask_migrate
+Flask_SQLalchemy
 psycopg2-binary
 flask_cors
+gunicorn
