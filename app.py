@@ -1,6 +1,7 @@
 """
  Importing Packages
 """
+import os
 from flask import Flask
 from flask_migrate import Migrate
 from flask_cors import CORS
@@ -9,7 +10,7 @@ from routes.user_routes import user_routes
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:5432/devDb'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # db = SQLAlchemy(app)

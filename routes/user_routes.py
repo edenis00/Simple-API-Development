@@ -35,3 +35,12 @@ def register_user():
         return jsonify({"message": "User registered successfully"}), 201
     except Exception as e:
         return jsonify({"Error": f"{e}"}), 500
+
+
+@user_routes.route('/')
+def home():
+    """
+    Home Page
+    """
+    return "Welcome to my FastAPI"
+
